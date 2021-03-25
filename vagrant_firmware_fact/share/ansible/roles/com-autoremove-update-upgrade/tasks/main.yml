@@ -1,0 +1,11 @@
+---
+- name: autoremove
+  apt:
+    autoremove: yes
+
+- apt:
+    update_cache: yes
+
+- name: apt-get dist-upgrade
+  apt:
+    upgrade: dist

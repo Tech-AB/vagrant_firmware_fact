@@ -1,0 +1,28 @@
+---
+- copy:
+    src: .bash_profile
+    dest: /home/vagrant/.bash_profile
+    owner: vagrant
+    group: vagrant
+    mode: 0644
+
+- copy:
+    src: .profile
+    dest: /home/vagrant/.profile
+    owner: vagrant
+    group: vagrant
+    mode: 0644
+    
+- copy:
+    src: .bashrc
+    dest: /home/vagrant/.bashrc
+    owner: vagrant
+    group: vagrant
+    mode: 0644
+    
+- copy:
+    src: aliasrc
+    dest: /home/vagrant/aliasrc
+    owner: vagrant
+    group: vagrant
+    mode: 0644

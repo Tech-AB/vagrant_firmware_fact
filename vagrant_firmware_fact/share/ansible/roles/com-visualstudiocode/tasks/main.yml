@@ -1,0 +1,5 @@
+---
+- name: Install VisualStudioCode
+  snap:
+    name: code
+    classic: yes

@@ -1,0 +1,22 @@
+---
+- name: COMMON | Install basic packages
+  package: name={{ item }} state=present
+  with_items:
+    - gcc
+    - make
+    - git
+    - wget
+
+- git:
+    repo: 'git clone https://gitlab.com/akihe/radamsa.git'
+    dest: /bin/fuzzer/radamsa
+    clone: yes
+    
+- name: Build the default target
+  make:
+    chdir: /bin/fuzzer/radamsa
+
+- name: Run 'install' target as root
+  make:
+    chdir: /bin/fuzzer/radamsa
+    target: install

@@ -1,0 +1,5 @@
+---
+- name: set locale
+  become: yes
+  template: src=locale.j2 dest=/etc/default/locale
+  when: ansible_os_family == "Debian"

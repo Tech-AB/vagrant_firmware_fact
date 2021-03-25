@@ -1,0 +1,3 @@
+---
+- name: restart snapd
+  service: name=snapd state=restarted

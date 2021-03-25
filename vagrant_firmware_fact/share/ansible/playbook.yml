@@ -1,0 +1,19 @@
+---
+- name: Kali
+  hosts: all
+  become: yes
+  gather_facts: yes
+  vars_files:
+    - "group_vars/all"
+  roles:
+    - com-keyboard-configuration
+    - com-autoremove-update-upgrade
+    - com-packages
+    #- com-reboot-and-continue
+    - com-docker
+    - com-gitlab-ce
+    #- firmware-fact
+    #- com-snapd
+    #- com-visualstudiocode
+    #- com-pycharm
+    #- com-docfetcher

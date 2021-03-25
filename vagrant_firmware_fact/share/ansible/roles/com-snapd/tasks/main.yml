@@ -1,0 +1,16 @@
+---
+- name: COMMON | Install basic packages
+  package: name={{ item }} state=present
+  with_items:
+    - snapd
+  notify: restart snapd
+  
+- name: Make sure a service is running
+  systemd:
+    state: started
+    name: snapd
+    
+- name: Make sure a service is running
+  systemd:
+    state: started
+    name: apparmor

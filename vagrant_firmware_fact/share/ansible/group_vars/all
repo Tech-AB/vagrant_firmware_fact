@@ -1,0 +1,24 @@
+####################################################
+# com_locale
+####################################################
+com_locale_lang: "en_US.UTF_8"
+com_locale_language: "en_US:en"
+
+####################################################
+# com_keyboard_configuration
+####################################################
+
+# The XKB keyboard model name.
+com_keyboard_configuration_keyboard_model: pc105
+
+# The XKB keyboard layout name.
+com_keyboard_configuration_keyboard_layout: de
+
+# The XKB keyboard variant components.
+com_keyboard_configuration_keyboard_variant: ''
+
+# The XKB keyboard option components.
+com_keyboard_configuration_keyboard_options: ''
+
+# The behavior of <BackSpace> and <Delete> keys.
+com_keyboard_configuration_keyboard_backspace: guess

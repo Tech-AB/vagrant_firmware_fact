@@ -1,0 +1,5 @@
+---
+- name: pull an image
+  docker_image:
+    name: gitlab/gitlab-ce
+    source: pull

@@ -1,0 +1,23 @@
+---
+- name: Creates directory
+  file:
+    path: /home/vagrant/FACT_core
+    state: directory
+    owner: vagrant
+    group: vagrant
+
+- git:
+    repo: 'https://github.com/fkie-cad/FACT_core.git'
+    dest: /home/vagrant/FACT_core
+    clone: yes
+    
+- name: return motd to registered var
+  command: /home/vagrant/FACT_core/src/install/pre_install.sh
+  
+- name: Creates directory
+  file:
+    path: /media/data
+    state: directory
+    owner: vagrant
+    group: vagrant
+ 

@@ -1,0 +1,12 @@
+#!/bin/sh
+alias ka="killall"
+alias mkd="mkdir -pv"
+alias f="$FILE"
+alias r="ranger"
+alias g="git"
+alias sdn="sudo shutdown -h now"
+alias ls="ls -lahN --color=auto --group-directories-first"
+alias grep="grep --color=auto"
+alias diff="diff --color=auto"
+alias ccat="highlight --out-format=ansi"
+alias ref="shortcuts >/dev/null; source ~/.config/shortcutrc"
